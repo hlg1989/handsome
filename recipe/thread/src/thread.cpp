@@ -2,7 +2,7 @@
 // Created by gwe on 21-4-8.
 //
 
-#include "thread.h"
+#include "thread/thread.h"
 #include <unistd.h>
 
 #include <sys/prctl.h>

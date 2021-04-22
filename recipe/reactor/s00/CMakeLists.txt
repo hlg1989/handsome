@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.0)
-project(logging)
+project(reactor-s00)
 
-include_directories(include)
+
 include_directories(${HANDSOME_ROOT_DIRECTORY}/recipe/thread/include)
+include_directories(${HANDSOME_ROOT_DIRECTORY}/recipe/logging/include)
 include_directories(${HANDSOME_ROOT_DIRECTORY}/recipe/datetime/include)
-
-aux_source_directory(src SOURCES)
+aux_source_directory(. SOURCES)
 
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
 target_link_libraries(${PROJECT_NAME} -lpthread)

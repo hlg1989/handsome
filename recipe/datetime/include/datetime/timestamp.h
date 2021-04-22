@@ -5,7 +5,7 @@
 #ifndef MISC_TEST_TIMESTAMP_H
 #define MISC_TEST_TIMESTAMP_H
 
-#include "thread/include/noncopyable.h"
+#include "thread/noncopyable.h"
 #include <stdint.h>
 #include <string>
 

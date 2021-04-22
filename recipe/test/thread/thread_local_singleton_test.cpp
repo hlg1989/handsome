@@ -2,9 +2,9 @@
 // Created by gwe on 21-4-9.
 //
 
-#include "thread.h"
-#include "thread_local_singleton.h"
-#include "noncopyable.h"
+#include "thread/thread.h"
+#include "thread/thread_local_singleton.h"
+#include "thread/noncopyable.h"
 
 #include <functional>
 #include <unistd.h>

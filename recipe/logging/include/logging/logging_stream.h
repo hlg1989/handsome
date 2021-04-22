@@ -8,7 +8,7 @@
 #include <assert.h>
 #include <string.h>
 #include <string>
-#include "thread/include/noncopyable.h"
+#include "thread/noncopyable.h"
 
 namespace handsome{
     namespace detail{

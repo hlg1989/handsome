@@ -7,11 +7,11 @@
 
 #include "logging_stream.h
 #include "logging_file.h"
-#include "thread/include/blocking_queue.h"
-#include "thread/include/count_down_latch.h"
-#include "thread/include/mutex.h"
-#include "thread/include/thread.h"
-#include "thread/include/noncopyable.h"
+#include "thread/include/thread/blocking_queue.h"
+#include "thread/include/thread/count_down_latch.h"
+#include "thread/include/thread/mutex.h"
+#include "thread/include/thread/thread.h"
+#include "thread/include/thread/noncopyable.h"
 
 #include <memory>
 #include <vector>

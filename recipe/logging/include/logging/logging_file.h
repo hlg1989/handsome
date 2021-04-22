@@ -5,8 +5,8 @@
 #ifndef MISC_TEST_LOGGING_FILE_H
 #define MISC_TEST_LOGGING_FILE_H
 
-#include "thread/include/mutex.h"
-#include "thread/include/noncopyable.h"
+#include "thread/mutex.h"
+#include "thread/noncopyable.h"
 
 #include <string>
 #include <memory>

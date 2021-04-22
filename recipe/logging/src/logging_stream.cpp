@@ -2,7 +2,7 @@
 // Created by gwe on 21-4-15.
 //
 
-#include "logging_stream.h"
+#include "logging/logging_stream.h"
 #include <algorithm>
 #include <limits>
 #include <type_traits>

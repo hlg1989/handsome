@@ -2,10 +2,10 @@
 // Created by gwe on 21-4-16.
 //
 
-#include "logger.h"
+#include "logging/logger.h"
 
-#include "datetime/include/timestamp.h"
-#include "thread/include/thread.h"
+#include "datetime/timestamp.h"
+#include "thread/thread.h"
 
 #include <errno.h>
 #include <stdio.h>
@@ -61,6 +61,7 @@ namespace handsome
         : m_timestamp(timestamp::now())
         , m_stream()
         , m_level(level)
+        , m_line(line)
         , m_fullname(file)
         , m_basename(nullptr)
     {

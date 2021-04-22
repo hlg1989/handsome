@@ -6,10 +6,10 @@
 #define MISC_TEST_ASYNC_LOGGING_QUEUE_H
 
 #include "logging_file.h"
-#include "thread/include/blocking_queue.h"
-#include "thread/include/count_down_latch.h"
-#include "thread/include/thread.h"
-#include "thread/include/noncopyable.h"
+#include "thread/include/thread/blocking_queue.h"
+#include "thread/include/thread/count_down_latch.h"
+#include "thread/include/thread/thread.h"
+#include "thread/include/thread/noncopyable.h"
 
 #include <string>
 #include <functional>

@@ -6,7 +6,7 @@
 #define MISC_TEST_LOGGER_H
 
 #include "logging_stream.h"
-#include "datetime/include/timestamp.h"
+#include "datetime/timestamp.h"
 #include <memory>
 
 namespace handsome
@@ -74,7 +74,7 @@ namespace handsome
 #define LOG_DEBUG   if(handsome::logger::log_level() <= handsome::logger::DEBUG)    \
     handsome::logger(__FILE__, __LINE__, handsome::logger::DEBUG, __FUNCTION__).stream()
 
-#define LOG_DEBUG   if(handsome::logger::log_level() <= handsome::logger::INFO)     \
+#define LOG_INFO   if(handsome::logger::log_level() <= handsome::logger::INFO)     \
     handsome::logger(__FILE__, __LINE__, handsome::logger::INFO, __FUNCTION__).stream()
 
 #define LOG_WARN    handsome::logger(__FILE__, __LINE__, handsome::logger::WARN).stream()

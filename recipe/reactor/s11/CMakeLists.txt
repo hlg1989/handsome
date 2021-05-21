@@ -1,13 +1,12 @@
 cmake_minimum_required(VERSION 3.0)
-project(reactor-s10-test)
+project(reactor-s11)
 
 
 include_directories(${HANDSOME_ROOT_DIRECTORY}/recipe/thread/include)
 include_directories(${HANDSOME_ROOT_DIRECTORY}/recipe/logging/include)
 include_directories(${HANDSOME_ROOT_DIRECTORY}/recipe/datetime/include)
-include_directories(${HANDSOME_ROOT_DIRECTORY}/recipe/reactor/s10)
 aux_source_directory(. SOURCES)
 
-add_executable(${PROJECT_NAME} s10-test9.cpp)
-
-target_link_libraries(${PROJECT_NAME} reactor-s10)
+add_library(${PROJECT_NAME} SHARED ${SOURCES})
+target_link_libraries(${PROJECT_NAME} -lpthread)
+target_link_libraries(${PROJECT_NAME} thread logging datetime)
